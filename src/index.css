@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Ubuntu&display=swap");
+:root {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --grayColor: gray;
+  --primaryColor: #d59d6b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.content-grid {
+  --padding: 1rem;
+  display: grid;
+  grid-template-columns:
+    [full-width-start] minmax(var(--padding), 1fr)
+    [content-start] min(100% - (var(--padding) * 2), 90%) [content-end]
+    minmax(var(--padding), 1fr) [full-width-end];
+  scroll-snap-align: center;
+  row-gap: 30px;
+}
+
+.content-grid > * {
+  grid-column: content;
+}
+.content-grid > .full-width {
+  grid-column: full-width;
+}
+
+body {
+  color-scheme: light;
+  /* --textColor: #d59d6b; */
+  --textColor: #000;
+  --BGC: #ebecef;
+  color: var(--textColor);
+  background-color: var(--BGC);
+}
+
+body.dark {
+  color-scheme: dark;
+  /* --BGC: #293036; */
+  --BGC: #242424;
+  --textColor: rgba(255, 255, 255, 0.87);
+}
+a:focus-visible {
+  outline: 3px solid var(--primaryColor);
+  outline-offset: 5px;
+}
+
+.fx {
+  display: flex;
+}
+.fx-aic {
+  align-items: center;
+}
+.fx-jcc {
+  justify-content: center;
+}
+.fx-dir-col {
+  flex-direction: column;
+}
+.gap {
+  --gap: 10px;
+  gap: var(--gap);
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--textColor);
+  text-transform: capitalize;
+}

@@ -1,0 +1,59 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Our Products",
+    "contact": "Contact Us",
+    "language": "language",
+    "theme": {
+      "title": "Theme",
+      "light": "Light Theme",
+      "dark": "Dark Theme",
+      "system": "Device Default"
+    }
+  },
+  "home": {
+    "title": "THE BEST COFFEE SCENE YOU HAVE EVER SEEN.",
+    "description": " Not concerned by profit, we opened this from pure passion and commitment to quality and to produce the roost exquisite and exceptional coffee that you can taste. only the finest organic beans",
+    "shopNow": "Shop Now "
+  },
+  "about": {
+    "title": "About Us",
+    "ourValues": "Our Values",
+    "ourValuesDesc": "At Qahwa, we are committed to excellence, sustainability, and community. Our coffee is sourced from the finest beans, ethically traded, and carefully processed to deliver a product that is not only delicious but also respects the environment and the people involved in its creation.",
+    "ourStory": "Our Story",
+    "ourStoryDesc": "The journey of Qahwa began with a passion for coffee and a desire to bring the authentic taste of Arabic coffee to the world. Founded by the renowned Dr. Ahmed Bahjat, our brand is a testament to the rich heritage and evolving culture of coffee in the Arab world. Each cup of Qahwa tells a story of tradition, innovation, and a deep connection to the roots of coffee-making.",
+    "joinUs": "Join Us",
+    "joinUsDesc": " We invite you to join our community of coffee lovers and connoisseurs. Whether you are savoring a cup at home, or sharing a brew with friends, Qahwa is here to enhance your coffee experience. Follow us on social media and stay updated on our latest offerings and events."
+  },
+  "products": {
+    "ourProducts": "Our Products",
+    "french": "French",
+    "frenchLight": "French Light",
+    "frenchMedium": "French Medium",
+    "frenchDark": "French Dark",
+    "plain": "Plain",
+    "plainLight": "Plain Light",
+    "plainMedium": "Plain Medium",
+    "plainDark": "Plain Dark",
+    "muhawaj": "Muhawaj",
+    "muhawajLight": "Muhawaj Light",
+    "muhawajMedium": "Muhawaj Medium",
+    "muhawajDark": "Muhawaj Dark",
+    "flavor": "Flavor",
+    "hazelnut": "Hazelnut",
+    "greek": "Greek",
+    "mocha": "Mocha",
+    "currency": "EGY"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "message": "Feel free to reach out to us via phone or visit us at our location for any inquiries.",
+    "location": "Dream Land - Wahat Road - 6th of October - Giza"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "socialLinks": "Social Links",
+    "copyRights": "All rights reserved."
+  }
+}

@@ -168,11 +168,6 @@ body.dark .headerIcons {
   background-color: #f9f9f9;
 }
 
-.primaryHeader {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
-}
-
 .ctaButton {
   background-color: #d59d6b;
   color: #fff;

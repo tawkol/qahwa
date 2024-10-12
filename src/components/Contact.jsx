@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { fadeIn } from "../utilities/animationVariants";
 import { useTranslation } from "react-i18next";
-import { Container, Typography, Box } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PhoneIcon from "@mui/icons-material/Phone";
 
@@ -10,16 +9,30 @@ const Contact = () => {
 
   return (
     <section className="contact" id="contact">
-      <Container maxWidth="md" sx={{ textAlign: "center", py: 4 }}>
-        <motion.div
-          variants={fadeIn("down")}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.2 }}
-          className="fx gap fx-aic"
-        >
+      <div style={{ "--gap": "30px" }} className="container fx fx-dir-col gap">
+        <div className="fx gap fx-aic">
           <span className="borderForHeader" />
           <h2 className="primaryHeader">{t("contact.title")}</h2>
+        </div>
+
+        <motion.div
+          variants={fadeIn("down", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: true, amount: 0.2 }}
+          className="fx fx-dir-col gap"
+          style={{ "--gap": "20px" }}
+        >
+          <div 
+          
+          className="fx fx-aic gap">
+            <LocationOnIcon color="primary" sx={{ fontSize: "2rem" }} />
+            <p>{t("contact.location")}</p>
+          </div>
+          <div className="fx fx-aic gap">
+            <PhoneIcon color="primary" sx={{ fontSize: "2rem" }} />
+            <p>+20 100 742 1294</p>
+          </div>
         </motion.div>
         <motion.p
           variants={fadeIn("down", 0.2)}
@@ -30,38 +43,7 @@ const Contact = () => {
         >
           {t("contact.message")}
         </motion.p>
-
-        <motion.div
-          variants={fadeIn("left", 0.4)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: true, amount: 0.2 }}
-          className="fx fx-dir-col gap"
-        >
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              mb: 2,
-            }}
-          >
-            <LocationOnIcon sx={{ mr: 1 }} />
-            <Typography variant="body1">{t("contact.location")}</Typography>
-          </Box>
-
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <PhoneIcon sx={{ mr: 1 }} />
-            <Typography variant="body1">+20 100 742 1294</Typography>
-          </Box>
-        </motion.div>
-      </Container>
+      </div>
     </section>
   );
 };

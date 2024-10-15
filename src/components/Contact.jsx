@@ -23,15 +23,13 @@ const Contact = () => {
           className="fx fx-dir-col gap"
           style={{ "--gap": "20px" }}
         >
-          <div 
-          
-          className="fx fx-aic gap">
+          <div className="fx fx-aic gap">
             <LocationOnIcon color="primary" sx={{ fontSize: "2rem" }} />
             <p>{t("contact.location")}</p>
           </div>
           <div className="fx fx-aic gap">
             <PhoneIcon color="primary" sx={{ fontSize: "2rem" }} />
-            <p>+20 100 742 1294</p>
+            <p dir="ltr">+20 100 742 1294</p>
           </div>
         </motion.div>
         <motion.p
